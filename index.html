@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ECX1 : </title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<body>
+
+	<div class="container">
+
+	<!-- george the duck -->
+	<div class="george">
+		<img src="https://cdn-icons-png.flaticon.com/256/1886/1886902.png" id="duck-george">
+		<h2>Hi, my name is <b>george</b>. Let's test your math skills ~</h2>
+	</div>
+	
+	<!-- QUESTIONS -->
+
+	<div class="question">
+		<br/>
+
+		<h5>Given (^^)ゞ</h5>	
+		<form>
+			<label for="value_a">Enter a value for a:</label>
+			<br />
+			<input type="number" name="value_a" id="val_a" class="form-control">
+
+			<br />
+			<label for="value_b">Enter a value for b:</label>
+			<br />
+			<input type="number" name="value_b" id="val_b" class="form-control">
+
+			<br />
+
+			<button type="button" id="button" class="btn btn-dark" onclick="window.location.reload()">RELOAD PAGE</button>
+	</div>
+
+		<br />
+		<br />
+
+	<!-- ANSWER BUTTONS -->
+	<div class="answer-button">
+
+	<button type="button" id="round" class="btn btn-light" class="form-control" onclick="round$()">ROUND OFF</button>
+	<br />
+	<button type="button" id="power" class="btn btn-light" class="form-control" onclick="power$()">POWER</button>
+
+	<br />
+	<br />
+
+	<button type="button" id="squareroot" class="btn btn-light" class="form-control" onclick="squarer$()">SQUARE ROOT</button>
+	<br />
+	<button type="button" id="random" class="btn btn-light" class="form-control" onclick="random$()">RANDOM</button>
+
+	<!-- FUNCTIONS -->
+
+	<script type="text/javascript">
+
+		// PRODUCT
+		function round$(){
+
+		var a = document.getElementById('val_a').value;
+		var b = document.getElementById('val_b').value;
+		window.alert('The value of a is rounded of to is ' +Math.round(a) + '.');		
+
+		}
+
+		// POWER
+		function power$(){
+
+		var a = document.getElementById('val_a').value;
+		var b = document.getElementById('val_b').value;
+		window.alert('a raised to b is ' + Math.pow(a,b) + '.');
+
+		}
+
+		// SQUARE ROOT
+		function squarer$(){
+
+		var a = document.getElementById('val_a').value;
+		var b = document.getElementById('val_b').value;
+		window.alert('The square root of a is ' + Math.sqrt(a) + ' and the square root of b is ' + Math.sqrt(b)) + '.';
+
+		}
+
+		// RANDOM
+		function random$(){
+
+		var a = document.getElementById('val_a').value;
+		var b = document.getElementById('val_b').value;
+		window.alert(Math.random(a) + ' and ' + Math.random(b));
+
+		}
+	</script>
+</div>
+</div>
+
+	<div class="footer">
+		<p><a href="https://github.com/HYao9T">YAO, Harmony Gail K. | 9 Topaz</p>
+	</div>
+
+</body>
